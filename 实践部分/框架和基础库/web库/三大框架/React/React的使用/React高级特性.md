@@ -10,7 +10,7 @@
 
 ### 非受控组件
 
-react：this.myref.current
+react：myref.current
 
 vue：this.refs.myref
 
@@ -66,6 +66,7 @@ static contextType = ThemeContext
 <ThemeContext.Consumer>
     {通过value获取值}
 </ThemeContext.Consumer>
+// 或者使用useContext
 ```
 
 
@@ -80,7 +81,7 @@ static contextType = ThemeContext
 const ContextDemo = React.lazy(() => import('./ContextDemo'))
 
 <React.Suspense fallback={<div>Loading...</div>}>
-	<ContextDemo>      
+	<ContextDemo>
 <React.Suspense>
 ```
 
@@ -235,7 +236,7 @@ shouldComponentUpdate(nextProps, nextState){
 
 + HOC vs Render Props
   + HOC模式简单，但会增加组件层级，难维护
-  + Render Props：代码简单
+  + Render Props：代码简单，不过也不推荐使用，容器组件嵌套
 
 
 

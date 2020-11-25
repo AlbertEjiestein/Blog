@@ -19,26 +19,12 @@ react和vue对比：
 
 
 
-**JSX基本使用**
-
-组件数据  插值   表达式   图像  class和style
-
-
-
-**条件**
-
-
-
-**列表**
-
-
-
 **事件**
 
 + react的event不是原生的event，是**合成事件**(SyntheticEvent)
 
 + event是SyntheticEvent，event.nativeEvent是原生事件，所有的事件都被挂载到document上，和DOM事件不一样
-+ event是原生的，事件被挂载到当前元素，和DOM事件一样
++ vue中，event是原生的，事件被挂载到当前元素，和DOM事件一样
 
 
 
@@ -46,9 +32,9 @@ react和vue对比：
 
 表单可以分受控和非受控组件两种来实现：
 
-+ 受控：通过对input|textarea设置value &onChange实现双向绑定，模仿了Vue的v-model原理
++ 受控：通过对input|textarea设置value & onChange实现双向绑定，模仿了Vue的v-model原理
 
-+ 非受控：通过ref绑定来实现
++ 非受控：通过ref绑定来实现，有四种ref实现方式：useRef | createRef | 回调ref ｜ 字符串ref
 
 
 
@@ -142,4 +128,7 @@ react和vue对比：
 
 **生命周期**
 
-对比react和vue的生命周期，单个组件和父子组件的生命周期
+对比react和vue的生命周期，单个组件和父子组件的生命周期，以及react的类组件和函数组件的生命周期
+
+
+
